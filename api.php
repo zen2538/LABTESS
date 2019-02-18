@@ -15,8 +15,8 @@
 
 
   $api_key="xX3Bhqg9gp1ds9yfrPfgzaa8BlYS2igP";
-  $url = 'https://api.mongolab.com/api/1/databases/weather/collections/data?apiKey='.$api_key.'';
-  $json = file_get_contents('https://api.mongolab.com/api/1/databases/weather/collections/data?apiKey='.$api_key.'&q={"question":"'.$_msg.'"}');
+  $url = 'https://api.mongolab.com/api/1/databases/data/collections/data?apiKey='.$api_key.'';
+  $json = file_get_contents('https://api.mongolab.com/api/1/databases/data/collections/data?apiKey='.$api_key.'&q={"question":"'.$_msg.'"}');
   $data = json_decode($json);
   $isData=sizeof($data);
 
