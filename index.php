@@ -5,6 +5,6 @@
 	<title>Document</title>
 </head>
 <body>
-	<h1>Success Full :)</h1>
+	<h1>Welcome Heroku</h1>
 </body>
 </html>
