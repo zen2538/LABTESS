@@ -28,7 +28,7 @@ if(!is_null($json['displayName'])){
 
   foreach ($json as $type => $value){
      if($type == 'displayName'){
-        $name = $value; // send reply text name
+        $name = $value; // send reply text name gg
      }
   }
 }
