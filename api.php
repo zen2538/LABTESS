@@ -1,8 +1,7 @@
 <?php
 
   $strAccessToken = "AHnv9qVdS2tMYN25CPL0yV+x/G6Z3WqgwOvoWb99ORNyfgY2dDy6R/7KvWc6mLKUK6OAj+TuSpilJkTxMa3x1+ie8toLFfj7EMf2CklzCW/s7nCzBPTJHmn40B22V10HGlhOQbdgcYIVinuGbmXobQdB04t89/1O/w1cDnyilFU=";
-  //$strAccessToken = "eAnt4bRuZ7yYDz0JTDKUhbQp0slqwUHMepuTGOfbhZwJurCrd7y8qXjX8UaST8xQsknAI6CN4nWGv3t6LwkONikxfursy4+Neax1rgBT2g7HmHswuqR4iA7T2zRJUYHyuTWZnN7niYM1dl+0qJCnvQdB04t89/1O/w1cDnyilFU=";
-
+  
   $content = file_get_contents('php://input');
   $arrJson = json_decode($content, true);
 
@@ -68,7 +67,6 @@
         $arrPostData['messages'][0]['text'] = 'อุ๋งๆ คุณสามารถสอนให้ฉลาดได้เพียงพิมพ์: สอนอุ๋ง[คำถาม|คำตอบ]';
     }
   }
-
 
   $channel = curl_init();
   curl_setopt($channel, CURLOPT_URL,$strUrl);
