@@ -7,8 +7,6 @@ $content = file_get_contents('php://input');//  Call LINE
 $events = json_decode($content, true); // Call LINE
 //$database = file_get_contents('http://35.198.193.206/jsonline.php'); // Call DataBase
 //$datas = json_decode($database, true);  // Call DataBase
-
-
 function CallLineGetName($access_token,$userId){
 
   $url = 'https://api.line.me/v2/bot/profile/'.$userId;
