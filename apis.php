@@ -86,7 +86,7 @@
           }else if($text == "ใครสร้าง Mark I"){
             $text ="Mark I ถูกสร้างโดย mr.mach ครับ";
           }else{
-            $text = "ขอเวลาเรียนรู้ก่อนนะครับ";
+            $text = "ขอเวลาเรียนรู้ก่อนนะครับ :)";
           }
 
           $replyToken = $event['replyToken'];
