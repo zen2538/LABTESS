@@ -19,11 +19,11 @@
   $data = json_decode($json);
   $isData=sizeof($data);
 
-  if (strpos($_msg, 'สอนอุ๋ง') !== false) 
+  if (strpos($_msg, 'H.E.L.E.N') !== false) 
   {
-    if (strpos($_msg, 'สอนอุ๋ง') !== false) 
+    if (strpos($_msg, 'H.E.L.E.N') !== false) 
     {
-      $x_tra = str_replace("สอนอุ๋ง","", $_msg);
+      $x_tra = str_replace("H.E.L.E.N","", $_msg);
       $pieces = explode("|", $x_tra);
       $_question=str_replace("[","",$pieces[0]);
       $_answer=str_replace("]","",$pieces[1]);
@@ -46,7 +46,7 @@
       $arrPostData = array();
       $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
       $arrPostData['messages'][0]['type'] = "text";
-      $arrPostData['messages'][0]['text'] = 'ขอบคุณที่สอนอุ๋งนะ';
+      $arrPostData['messages'][0]['text'] = 'Thank you.';
     }
   }
   else
@@ -64,7 +64,7 @@
         $arrPostData = array();
         $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
         $arrPostData['messages'][0]['type'] = "text";
-        $arrPostData['messages'][0]['text'] = 'อุ๋งๆ คุณสามารถสอนให้ฉลาดได้เพียงพิมพ์: สอนอุ๋ง[คำถาม|คำตอบ]';
+        $arrPostData['messages'][0]['text'] = 'H.E.L.E.N คุณสามารถสอนให้ฉันฉลาดได้เพียงพิมพ์: สอน[คำถาม|คำตอบ]';
     }
   }
 
