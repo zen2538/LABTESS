@@ -7,8 +7,8 @@
   $events = json_decode($content, true); 
 
   // Call Database Mysql
-  $database = file_get_contents('http://35.198.246.124/dbtestbme/jsonline.php');
-  $datas = json_decode($database, true);  
+  //$database = file_get_contents('http://35.198.246.124/dbtestbme/jsonline.php');
+  //$datas = json_decode($database, true);  
 
   // Call Function GetName
   function CallLineGetName($access_token,$userId){
